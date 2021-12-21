@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 url = "https://en.wikipedia.org/wiki/R"
-menu=int(input("press 1 for Name \n press 2 for History "))
+menu=int(input("Press 1 for Name \n press 2 for History "))
 lis=['Name','History']
 content = requests.get(url)
 soup = BeautifulSoup(content.text, 'html.parser')
